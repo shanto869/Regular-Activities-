@@ -7,10 +7,10 @@ const Header = () => {
     return (
 
         <div className='header'>
-            <h1>
+            <h2>
                 <FontAwesomeIcon icon={faWalking}></FontAwesomeIcon>
                 <span>Ultra Daily Life Activity</span>
-            </h1>
+            </h2>
         </div>
 
     );
