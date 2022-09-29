@@ -27,7 +27,7 @@ const ActivityDetails = (props) => {
     return (
         <div className='activity-details'>
             <div className='break-time'>
-                <strong>Break Time</strong>
+                <strong className='fw-ligher'>Break Time</strong>
                 <button onClick={() => addBreakTime('10 min')}>10 m</button>
                 <button onClick={() => addBreakTime('15 min')}>15 m</button>
                 <button onClick={() => addBreakTime('30 min')}>30 m</button>

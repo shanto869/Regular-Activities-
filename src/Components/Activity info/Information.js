@@ -10,8 +10,8 @@ const Information = (props) => {
                 <div className='my-pic'>
                     <img src="https://images.pexels.com/photos/2379003/pexels-photo-2379003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
                 </div>
-                <h4>Name: Shanto Biswas</h4>
-                <h5>Junior Web Developer</h5>
+                <h6>Name: Shanto Biswas</h6>
+                <h6>Junior Web Developer</h6>
                 <small>Age: 24</small>
                 <small>Nationality: Bangladeshi</small>
             </div>
