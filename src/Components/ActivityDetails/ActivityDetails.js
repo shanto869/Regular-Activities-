@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './ActivityDetails.css'
+import './ActivityDetails.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ActivityDetails = (props) => {
     const { totalTime } = props;
@@ -23,6 +26,12 @@ const ActivityDetails = (props) => {
         localStorage.setItem('break-time', time);
     }
 
+    const toastMessage = () => {
+        toast.success("Congratulation you have done your activity!", {
+            position: "top-center"
+        });
+    }
+
 
     return (
         <div className='activity-details'>
@@ -37,7 +46,11 @@ const ActivityDetails = (props) => {
 
             <div className='time'>Total Time: {totalDuration} min</div>
             <div className='time show-break-time'>Break Time: {breakTime}</div>
-            <button className='btn-completed'>Daily Activity Completed</button>
+            <button onClick={toastMessage} className='btn-completed'>
+                Daily Activity Completed
+            </button>
+
+            <ToastContainer />
         </div>
     );
 };
