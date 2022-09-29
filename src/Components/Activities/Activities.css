@@ -1,0 +1,12 @@
+.activities-container {
+    display: grid;
+    grid-template-columns: 70% 22%;
+    grid-gap: 5%;
+    margin: 0 5%;
+}
+
+.activities-container .activity-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
