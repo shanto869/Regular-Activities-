@@ -10,7 +10,7 @@ const Activity = (props) => {
         <div className='activity'>
             <img src={picture} alt="" />
             <div className='activity-info'>
-                <h5 className=''>{name}</h5>
+                <h5>{name}</h5>
                 <p>Duration: {duration_time} min</p>
             </div>
             <button onClick={() => addTotalTime(duration_time)}>

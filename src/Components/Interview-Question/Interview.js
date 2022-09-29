@@ -3,7 +3,7 @@ import './Interview.css'
 
 const Interview = () => {
     return (
-        <div className='mb-5'>
+        <div className='mb-5 interview-container'>
             <div className="accordion accordion-flush w-75 mx-auto shadow-lg mt-5" id="accordionFlushExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header  py-3" id="flush-headingOne">
@@ -16,7 +16,9 @@ const Interview = () => {
                     <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
                         <div className="accordion-body">
-                            A React app usually has a single root DOM node. Rendering an element into the DOM will change the user interface of the page. React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM. Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth keeping a DOM tree in it to speed up its manipulation.
+                            <p>
+                                A React app usually has a single root DOM node. Rendering an element into the DOM will change the user interface of the page. React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM. Unlike browser DOM elements, React elements are plain objects and are cheap to create. React DOM takes care of updating the DOM to match the React elements. The reason for this is that JavaScript is very fast and it’s worth keeping a DOM tree in it to speed up its manipulation.
+                            </p>
                         </div>
                     </div>
                 </div>

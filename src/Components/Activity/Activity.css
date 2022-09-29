@@ -26,5 +26,14 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+    transition: all linear .3s;
+    font-weight: 600;
+}
 
+.activity button:hover {
+    background-color: bisque;
+}
+
+.activity h5 {
+    margin-left: 0;
 }
