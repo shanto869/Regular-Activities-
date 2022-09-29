@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "picture": "https://images.pexels.com/photos/5875445/pexels-photo-5875445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Morning Prayer",
+        "duration_time": 30,
+        "break_time": 10
+    },
+    {
+        "id": 2,
+        "picture": "https://images.pexels.com/photos/878151/pexels-photo-878151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Exercise",
+        "duration_time": 40,
+        "break_time": 15
+    },
+    {
+        "id": 3,
+        "picture": "https://images.pexels.com/photos/8750321/pexels-photo-8750321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Shower",
+        "duration_time": 20,
+        "break_time": 20
+    },
+    {
+        "id": 4,
+        "picture": "https://images.pexels.com/photos/2781195/pexels-photo-2781195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Study",
+        "duration_time": 120,
+        "break_time": 10
+    },
+    {
+        "id": 5,
+        "picture": "https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Coding",
+        "duration_time": 180,
+        "break_time": 15
+    },
+    {
+        "id": 6,
+        "picture": "https://images.pexels.com/photos/3718433/pexels-photo-3718433.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "name": "Cricket",
+        "duration_time": 40,
+        "break_time": 10
+    }
+]
