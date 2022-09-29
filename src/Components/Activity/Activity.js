@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Activity.css'
 
 const Activity = (props) => {
-    const { activity } = props;
-    // console.log(activity)
+    const { activity, addTotalTime } = props;
     const { picture, name, id, duration_time, break_time } = activity;
-    // console.log(activity)
+
+
     return (
         <div className='activity'>
             <img src={picture} alt="" />
@@ -13,7 +13,9 @@ const Activity = (props) => {
                 <h4>{name}</h4>
                 <p>Duration: {duration_time} min</p>
             </div>
-            <button>Add To List</button>
+            <button onClick={() => addTotalTime(duration_time)}>
+                Add To List
+            </button>
         </div>
     );
 };

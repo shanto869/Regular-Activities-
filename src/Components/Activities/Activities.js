@@ -5,12 +5,20 @@ import './Activities.css'
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
+    const [totalTime, setTotalTime] = useState([]);
+
 
     useState(() => {
         fetch('fakeData/activity.json')
             .then(res => res.json())
             .then(data => setActivities(data))
-    }, [])
+    }, [totalTime])
+
+
+    const addTotalTime = (time) => {
+        let newTime = [...totalTime, time]
+        setTotalTime(newTime)
+    }
 
     return (
         <div>
@@ -19,11 +27,11 @@ const Activities = () => {
             <div className='activities-container'>
                 <div className="activity-container">
                     {
-                        activities.map(activity => <Activity activity={activity} key={activity.id}></Activity>)
+                        activities.map(activity => <Activity activity={activity} key={activity.id} addTotalTime={addTotalTime}></Activity>)
                     }
                 </div>
 
-                <Information></Information>
+                <Information totalTime={totalTime}></Information>
             </div>
         </div>
     );

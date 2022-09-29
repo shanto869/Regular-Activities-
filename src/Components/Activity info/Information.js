@@ -2,7 +2,8 @@ import React from 'react';
 import ActivityDetails from '../ActivityDetails/ActivityDetails';
 import './Information.css'
 
-const Information = () => {
+const Information = (props) => {
+    const { totalTime } = props;
     return (
         <div className='information'>
             <div className='my-info'>
@@ -16,7 +17,7 @@ const Information = () => {
             </div>
             <hr />
 
-            <ActivityDetails></ActivityDetails>
+            <ActivityDetails totalTime={totalTime}></ActivityDetails>
         </div>
     );
 };
