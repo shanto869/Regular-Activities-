@@ -4,7 +4,9 @@ import './Interview.css'
 const Interview = () => {
     return (
         <div className='mb-5 interview-container'>
-            <div className="accordion accordion-flush w-75 mx-auto shadow-lg mt-5" id="accordionFlushExample">
+            <h4 className='mt-5'>Interview Question</h4>
+
+            <div className="accordion accordion-flush w-75 mx-auto mt-4" id="accordionFlushExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header  py-3" id="flush-headingOne">
                         <button className="accordion-button collapsed fs-5 heading-color heading-font"
