@@ -3,9 +3,9 @@ import './Activity.css'
 
 const Activity = (props) => {
     const { activity } = props;
-    console.log(activity)
+    // console.log(activity)
     const { picture, name, id, duration_time, break_time } = activity;
-    console.log(activity)
+    // console.log(activity)
     return (
         <div className='activity'>
             <img src={picture} alt="" />

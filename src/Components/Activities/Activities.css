@@ -1,6 +1,6 @@
 .activities-container {
     display: grid;
-    grid-template-columns: 70% 22%;
+    grid-template-columns: 70% 25%;
     grid-gap: 5%;
     margin: 0 5%;
 }
@@ -9,4 +9,35 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+}
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
+    .activities-container {
+        grid-template-columns: 55% 40%;
+        margin: 0 5%;
+    }
+
+    .activities-container .activity-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 750px) {
+    .activities-container {
+        grid-template-columns: 1fr;
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .activities-container {
+        grid-template-columns: 1fr;
+        margin: 0 2%;
+    }
+
+    .activities-container .activity-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
