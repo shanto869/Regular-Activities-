@@ -12,12 +12,14 @@ const ActivityDetails = (props) => {
         totalDuration = totalDuration + time;
     }
 
-
     const [breakTime, setBreakTime] = useState('0 min');
 
     useEffect(() => {
         let localStorageBreakTime = localStorage.getItem('break-time');
         setBreakTime(localStorageBreakTime)
+        if (!localStorageBreakTime) {
+            setBreakTime('0 min')
+        }
 
     }, [])
 
@@ -31,7 +33,6 @@ const ActivityDetails = (props) => {
             position: "top-center"
         });
     }
-
 
     return (
         <div className='activity-details'>
