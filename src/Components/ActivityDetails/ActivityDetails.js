@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ActivityDetails.css'
 
 const ActivityDetails = (props) => {
@@ -14,9 +14,17 @@ const ActivityDetails = (props) => {
 
     const [breakTime, setBreakTime] = useState('0 min');
 
+    useEffect(() => {
+        let localStorageBreakTime = localStorage.getItem('break-time');
+        setBreakTime(localStorageBreakTime)
+
+    }, [])
+
     const addBreakTime = (time) => {
-        setBreakTime(time)
+        setBreakTime(time);
+        localStorage.setItem('break-time', time);
     }
+
 
     return (
         <div className='activity-details'>
